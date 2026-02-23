@@ -189,14 +189,14 @@ h6,
 
 h1,
 .mil-h1 {
-  font-size: 86px;
+  font-size: 55px;
 }
 
 @media screen and (max-width: 1400px) {
 
   h1,
   .mil-h1 {
-    font-size: 74px;
+    font-size: 40px;
   }
 }
 
@@ -204,7 +204,7 @@ h1,
 
   h1,
   .mil-h1 {
-    font-size: 72px;
+    font-size: 40px;
   }
 }
 
@@ -212,7 +212,7 @@ h1,
 
   h1,
   .mil-h1 {
-    font-size: 58px;
+    font-size: 30px;
   }
 }
 
@@ -220,7 +220,7 @@ h1,
 
   h1,
   .mil-h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 
@@ -968,6 +968,9 @@ spaces
   margin-bottom: 30px;
 }
 
+.mil-mb-40 {
+  margin-bottom: 40px;
+}
 .mil-mb-60 {
   margin-bottom: 60px;
 }
@@ -3605,8 +3608,8 @@ portfolio
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
+  -o-object-position: top;
+  object-position: top;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
@@ -4942,7 +4945,104 @@ html.is-animating .mil-menu-frame {
   color: rgb(201, 201, 201);
   margin-top: 0.3rem;
   font-weight: bold;
-  /* font-size: 1rem; */
   letter-spacing: 1px;
   font-family: "Outfit", sans-serif;
+}
+
+
+/* sss */
+
+
+.CV-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2em;
+  font-size: 1em;
+}
+
+@media all and (max-width: 500px) {
+  .CV-page {
+    padding: 0 1em;
+  }
+}
+
+
+
+/* Grid
+****************************************************/
+
+.CV-grid {
+  display: table;
+}
+
+.CV-grid-column {
+  display: table-cell;
+}
+
+.CV-timeline {
+  position: relative;
+  margin: 0 0 0 0.5em;
+  padding-left: 1.5em;
+  border-left: solid 1px #222222;
+  overflow: visible;
+}
+
+
+.CV-timeline:first-of-type {
+  margin-top: 1em;
+}
+
+.CV-timeline:last-of-type {
+  border-left-color: transparent;
+}
+
+.CV-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: solid 1px #222222;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.CV-timeline-heading {
+  font-size: 2em;
+  margin: 0;
+  padding-bottom: 0.5em;
+  line-height: 1em;
+  font-weight: normal;
+  -webkit-transform: translateY(-0.1em);
+  -ms-transform: translateY(-0.1em);
+  transform: translateY(-0.1em);
+}
+
+.CV-timeline-heading-title {
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.CV-timeline-heading-location {
+  font-size: 0.9em;
+}
+
+.CV-timeline-heading-duration {
+  display: block;
+  font-size: 0.6em;
+  color: #6f6f6f;
+}
+
+.CV-timeline-details {
+  display: block;
+  margin: 0;
+  padding-bottom: 2em;
+  padding: 0 0 2em 1em;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQIW2NkYGD4D8TIgJERTQDMpVAQAGaUAQbko3DsAAAAAElFTkSuQmCC");
+}
+
+.CV-timeline-details-item {
+  margin-bottom: 0.5em;
 }
